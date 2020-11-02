@@ -1,0 +1,9 @@
+
+第三方授权测试：
+
+&scope=read(促发自定义授权页面)
+authorize:
+http://127.0.0.1:9015/oauth/authorize?response_type=code&client_id=lfz&redirect_uri=http://baidu.com&state=test&scope=read
+
+token：
+http://127.0.0.1:9015/oauth/token?grant_type=authorization_code&client_id=lfz&client_secret=123456&redirect_uri=http://baidu.com&code=HTJUB8&scope=read
